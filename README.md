@@ -31,3 +31,29 @@ Environment variables:
 - document_type=3
 
 document_type [ bills, invoices, reports, partialBills, partialConsumptionRatedReports, comsumptionRatedReports ]
+
+
+## 2bis - Create Function Graph to be notified by mail when new invoice are available
+
+```{
+        "identity": {
+        "methods": [
+            "password"
+        ],
+        "password": {
+            "user": {
+            "name": "first.lasname",
+            "password": "yourApiPassword",
+            "domain": {
+                "name": "OCB000XXX"
+            }
+            }
+        }
+        },
+        "scope": {
+        "project": {
+            "id": "fa742 ... Your Project ID"
+        }
+        }
+    }
+ ```
