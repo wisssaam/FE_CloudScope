@@ -1,5 +1,5 @@
 # Create a FunctionGraph to download Flexible Engine bills in a specific Bucket 
-## 0- Create Orange Developer Account
+## 1- Create Orange Developer Account
 
 Orange Developer : https://developer.orange.com/signin?r=/apis/cloudstorecustomerspace/overview </br>
 Use API: Cloud Customer Space API </br>
@@ -15,7 +15,7 @@ change this varible in the code : cloudstore_credentials =
 ```
     
     
-## 1- Create FunctionGraph
+## 2- Create FunctionGraph
 ### Code:
 Copy/Paste the code in the "Edit code inline" field</br>
 Dependencies=select the dependency named "esdk_obs_python-3x". This dependency is necesary to interact with fE Object storage (OBS)</br>
