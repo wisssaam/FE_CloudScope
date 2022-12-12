@@ -117,7 +117,7 @@ def getCloudStoreDocumentsList(cloudstore_header, document_type, max_files, logg
    # Get documents
     try:
         r = requests.get(url, headers=cloudstore_header, params=params)
-        #logger.info("Request CloudStore documents list (params= - {} - {}): {}".format(document_type, max_files, r.status_code))
+        logger.info("Request CloudStore documents list (params= - {} - {}): {}".format(document_type, max_files, r.status_code))
         
         if r.status_code != requests.codes.ok:
             raise Exception("Unable to get documents list: exit")
