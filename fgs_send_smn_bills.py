@@ -17,17 +17,17 @@ def authentification_smn():
         ],
         "password": {
             "user": {
-            "name": "wissam.benboubaker",
-            "password": "APIFlexible2022",
+            "name": "firstname.lastname",
+            "password": ".....",
             "domain": {
-                "name": "OCB0001661"
+                "name": "OCB000XXX"
             }
             }
         }
         },
         "scope": {
         "project": {
-            "id": "fa7426a17fe246698cf9a475f4254099"
+            "id": "fa742...."
         }
         }
     }
