@@ -62,4 +62,10 @@ Change "cloudstore_credentials" and those values :
     }
  ```
  
+ ### SMN
  You have to create SMN on FE and use it
+ 
+In the function "send_smn_msg"
+Change the URL value with you SMN value (URN ID)
+     url = "https://smn.eu-west-0.prod-cloud-ocb.orange-business.com/v2/fa7426a17fe246698cf9a475f4254099/notifications/topics/urn:smn:eu-west-0:fa7426a17fe246698cf9a475f4254099:9469994203fa42f5b51cba3b78b55549_dedicated_queue_dli_topic/publish"
+
