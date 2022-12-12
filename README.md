@@ -61,3 +61,5 @@ Change "cloudstore_credentials" and those values :
         }
     }
  ```
+ 
+ You have to create SMN on FE and use it
