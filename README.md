@@ -34,6 +34,9 @@ document_type [ bills, invoices, reports, partialBills, partialConsumptionRatedR
 
 
 ## 2bis - Create Function Graph to be notified by mail when new invoice are available
+in the function : fgs_send_smn_bills.py
+
+change also those values
 
 ```{
         "identity": {
