@@ -15,7 +15,7 @@ change this varible in the code : cloudstore_credentials =
 ```
     
     
-## 2- Create FunctionGraph
+## 2- Create FunctionGraph (fgs_download_fe_bills.py)
 ### Code:
 Copy/Paste the code in the "Edit code inline" field</br>
 Dependencies=select the dependency named "esdk_obs_python-3x". This dependency is necesary to interact with fE Object storage (OBS)</br>
@@ -33,10 +33,11 @@ Environment variables:
 document_type [ bills, invoices, reports, partialBills, partialConsumptionRatedReports, comsumptionRatedReports ]
 
 
-## 2bis - Create Function Graph to be notified by mail when new invoice are available
-in the function : fgs_send_smn_bills.py
+## 2bis - Create FunctionGraph (fgs_send_smn_bills.py)
 
-change also those values
+To be notified by mail when new invoice are available
+
+Change "cloudstore_credentials" and those values :
 
 ```{
         "identity": {
