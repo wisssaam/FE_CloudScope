@@ -8,7 +8,9 @@ import sys
 
 C_cloudstore_base_url = "https://api.orange.com/cloud/b2b/v1"
 
+
 def upload_file_to_obs(obsAddr, bucket, objName, ak, sk):
+
     TestObs = ObsClient(access_key_id=ak, secret_access_key=sk,server=obsAddr)
     objAbsPath = os.path.join('/tmp', objName)   # Obtains the absolute path of a local file.
     resp = TestObs.putFile(bucketName=bucket, objectKey=objName, file_path=objAbsPath)
@@ -66,11 +68,15 @@ def computeCloudStoreHeader(cloudstore_credentials, contract_id, logger):
 def getCloudStoreDocumentsList(cloudstore_header, contract_id, document_type, max_files, logger): # 
     # build url to fetch the documents list
     url = "{}/documents".format(C_cloudstore_base_url)
+    #params = json.dumps({'documentType':document_type, 'limit':max_files})
 
     params = {'documentType': document_type, 'limit': max_files}        # sent: the correct answer :) - with document_type='partialConsumptionRatedReports'
     logger.info(params)
 
+
+
    # Get documents
+    #if True:
     try:
         r = requests.get(url, headers=cloudstore_header, params=params)
         
@@ -82,6 +88,8 @@ def getCloudStoreDocumentsList(cloudstore_header, contract_id, document_type, ma
         documents = r.json()
         logger.info("documents="+json.dumps(documents))
 
+
+    #if False:
     except:
         documents = None
     
@@ -154,9 +162,9 @@ def handler (event, context):
     max_files = obs_address = int(context.getUserData('max_files'))
 
     cloudstore_credentials = """{
-            "auth_header":"Basic WWczT ... ", 
-            "api_key": "P+AuA5qT3U4bu ... ",
-            "client": {"id" : "Yg3LXRcF ... ", "secret" : "QTCHs ... "}
+            "auth_header":"Basic WWczTFhSY...", 
+            "api_key": "P+AuA5qT3UGLC+eQXgCZg/2DbPu...",
+            "client": {"id" : "Yg3LX.....", "secret" : "QTCHs....."}
     }"""
 
     cloudstore_header = computeCloudStoreHeader(json.loads(cloudstore_credentials), contract_id, logger)
