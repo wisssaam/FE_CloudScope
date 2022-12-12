@@ -154,9 +154,9 @@ def handler (event, context):
     max_files = obs_address = int(context.getUserData('max_files'))
 
     cloudstore_credentials = """{
-            "auth_header":"Basic WWczTFhSY0ZUR3c4dENIWnlYUHoyZTc3WERvN3R5M0k6UVRDSHNPdEwxRFBVMTNJUA==", 
-            "api_key": "P+AuA5qT3UGLC+eQXgCZg/2DbPCjumzAA/P6ZhfBkAGMyV04pbnU/V3jfsj/Uj8FIw51QgtCbsXDEgVaf6nV+sh4nNcVyxHa8cImeUjHctrG1D11tTE/QSDaInPNA37slCx75WrMcIJ3CUj+DYPrUVON6zC+zUPBHC6TlzA8YKu1qzH5NwO+NIARWnPJ8vtBcs381AiOVby8lmFyGftz4hBKWblgGzDZ7HXK77WqyqrPA6Yi+dLMb3vScgXIM9BuaY5FJxBndFObEZt6qXx5XKkJodPBMGYHpJojRXYKXUuF6RDeG+r0nOv2bDstBHjw5Vx+snDr2KWbT6K1jHpiRvBzd/SAE5rzPRbV63RhO7J1+h1KxEhiccGEoA1A1Qd0hYTNcN05MKh3UcmpAzIwvogbmwnV5o4ZkHUAoeOpRVTzOkt3zGiaOmh5wHHP6z9IViQq0SnouwrTvRMyXNq7UCbN/ra0EXynlXyjG5OwbShMIAhGlglivBe+YRhPtTpRhYUo7n84WjOvIsQU2WZbDGJ8E0h1xLAIJIP1NUUMhSfcmPg21L1MVWAYXxmi2ctiGxBMFXCj/L8JIeL8z826xc4p1kpE9bfS0P/fQHK9olZCdgerwoADKsKQoeT+lLdI47OCNdazvvXD3SMagwHcP0ikyiHsF7xFALPGIfNO54uXtg2pgo51fPehixHMNpKARL2GVxq6kh1td5IfCV8v7++tQ4ygvUuRIqw1IWy6cEjK/dl6aWghBsMthT1ylYkY+RYvKQj0shWf0mYAMkElZr+JF8ZzG9RbicjZktb2sS+V4ipuCTNVlcMoOLKnib0z20J8HIo/P2yxstRE9Adyki/XHWjq7JRa7/kj0mwwhLTUAvFpHn1D0OsgYl+1gjHVhbFABwesL0kjW81/39XnXABChCNKu8F/7zgphzVlpCaMjw/pOURG1qId1Qf66PS24b3RHo75Y+qLiat+jfpLyB0klxBAD1BLivr3haDVe36Nxy7p1o4M5j7MM5s8XbJl82GBW1kf7rGI12fDpQrZ9o37P/xnDGu86Mfkq00ZTAJ8bc/m/tDXQhWpRynXfPlXv7357whuehjqKllM6kNqpozroUXZCAso2qtCYlWyGKVQrlemovBQeD85fH0B/rvXtzXNkKb65FxY4Xfo2ZmFGMmryejQn+uMG5TFEMJ5LMeE1YGOLpNvlNcwsiWt5TkSfXz1asQS9+zgMBKzCvdclMDGjBL7xqSa0uN2kqmjGU/TjzCNz75HVJvqMZM8JG6u",
-            "client": {"id" : "Yg3LXRcFTGw8tCHZyXPz2e77XDo7ty3I", "secret" : "QTCHsOtL1DPU13IP"}
+            "auth_header":"Basic WWczT ... ", 
+            "api_key": "P+AuA5qT3U4bu ... ",
+            "client": {"id" : "Yg3LXRcF ... ", "secret" : "QTCHs ... "}
     }"""
 
     cloudstore_header = computeCloudStoreHeader(json.loads(cloudstore_credentials), contract_id, logger)
